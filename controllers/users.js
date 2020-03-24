@@ -120,6 +120,9 @@ module.exports = {
       res.send({user: req.user})
     } else res.send({Auth:false})
   },
+  addProfile: async (req, res) => {
+    await User.findByIdAndUpdate({ _id: req.body.id }, { profile: req.body.image });
+  },
 };
 
 async function newThread (senderId, recipientId) {

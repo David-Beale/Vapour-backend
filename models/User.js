@@ -28,7 +28,11 @@ const UserSchema = new mongoose.Schema({
       messageHistory: [{ type: Schema.Types.ObjectId, ref: 'Message' }]
     },
     required: false,
-  }
+  },
+  profile: {
+    type: String,
+    required: false,
+  },
 });
 
 const User = mongoose.model('User', UserSchema);
