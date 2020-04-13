@@ -25,11 +25,4 @@ router.get("/logout", userController.logout);
 //Session handle
 router.get("/", userController.session);
 
-<<<<<<< HEAD
-//Add profile picture
-router.put('/addProfile', userController.addProfile);
-
 module.exports = router;
-=======
-module.exports = router;
->>>>>>> temp
