@@ -2,7 +2,6 @@ const User = require("../models/User");
 const Message = require("../models/Message");
 const bcrypt = require("bcryptjs");
 const passport = require("passport");
-const keys = require("../config/keys");
 const uniqueString = require("unique-string");
 
 module.exports = {
@@ -128,7 +127,6 @@ module.exports = {
     })(req, res, next);
   },
   logout: (req, res) => {
-    console.log("logging out");
     req.logOut();
     res.redirect("/users/");
   },
