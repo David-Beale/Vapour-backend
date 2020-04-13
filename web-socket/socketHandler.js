@@ -10,10 +10,12 @@ let loggedInUsers = new Set();
 function socketHandler(io, socket) {
   io.emit('updateUsers', [...loggedInUsers]);
   socket.on('login-user', _id => {
+    console.log(_id, ' logged in')
     loggedInUsers.add(_id);
     io.emit('updateUsers', [...loggedInUsers]);
   });
   socket.on('logout-user', _id => {
+    console.log(_id, ' logged out')
     loggedInUsers.delete(_id);
     io.emit('updateUsers', [...loggedInUsers]);
   });
