@@ -12,7 +12,7 @@ Getting hit reduces your size and you will die if you get too small.
 Player names and images are downloaded from Vapour's database.
         
 ![vapour-img3](https://user-images.githubusercontent.com/59053870/79227572-01c30000-7e58-11ea-9e78-d459bc240289.jpg)  
-####The second game is a classic game of Pong. It is a 1v1 game using SocketIO but more players can spectate and join a queue. 
+#### The second game is a classic game of Pong. It is a 1v1 game using SocketIO but more players can spectate and join a queue. 
 The loser will be sent to the back of the queue and the winner keeps playing. 
 Player names and images are downloaded from Vapour's database.
 
