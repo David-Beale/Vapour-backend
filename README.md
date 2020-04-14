@@ -37,6 +37,12 @@ https://github.com/David-Beale/vapour-frontend
 * p5.js#
 * faceAPI
 
+## My contributions:
+* Front and back end authentication
+* 2 multiplayer games using Socket IO and canvas
+* Integration of FaceAPI
+* Integration of vapour effect
+* Deployment of frontend and backend
 
 ## Other contributors
 * Pawel Pietruszka
